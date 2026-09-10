@@ -1,0 +1,96 @@
+/* =========================================================
+   재활용 AI 분류 시스템 - 모던 그린 테마 (style.css)
+   ========================================================= */
+
+/* 1. 전체 배경 및 기본 폰트 설정 */
+.stApp {
+    background-color: #f8fafc;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+/* 2. 메인 헤더 및 타이틀 스타일 */
+h1 {
+    color: #0f5132 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem !important;
+}
+
+h2, h3 {
+    color: #1e293b !important;
+    font-weight: 700 !important;
+}
+
+/* 3. 메트릭(지표) 카드 스타일 커스텀 */
+[data-testid="stMetric"] {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+[data-testid="stMetricLabel"] {
+    color: #64748b !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #10b981 !important; /* 에메랄드 그린 포인트 컬러 */
+    font-size: 1.8rem !important;
+    font-weight: 800 !important;
+}
+
+/* 4. 기본 버튼 커스텀 (Primary/Secondary) */
+.stButton > button {
+    width: 100%;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.25);
+    transition: all 0.25s ease !important;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    box-shadow: 0 6px 12px -2px rgba(16, 185, 129, 0.35);
+    transform: translateY(-1px);
+}
+
+/* 5. 알림 박스 (Info, Success, Warning) 디자인 고급화 */
+.stAlert {
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* 6. 데이터프레임 및 테이블 모서리 둥글게 */
+[data-testid="stDataFrame"] {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* 7. 라디오 버튼 / 라디오 옵션 카드 느낌 내기 */
+[data-testid="stMarkdownContainer"] p {
+    font-weight: 500;
+}
+
+/* 구분선 디자인 */
+hr {
+    margin: 2rem 0 !important;
+    border-color: #cbd5e1 !important;
+}

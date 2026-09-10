@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# Training / dataset
+train/
+val/
+valid/
+test/
+runs/
+*.cache
+train.zip
+
+# Large / source model files not needed for app delivery
+yolov8n.pt
+yolov8s-world.pt
+yolov8s-world.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# AI model cache - download automatically when needed
+model/
+weights/
+
+# 압축 파일
+*.zip
